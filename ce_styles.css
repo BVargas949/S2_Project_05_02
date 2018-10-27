@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Costume Expressions Front Page
+   Author: Bryan Vargas
+   Date:   10/26/18
+   
+   Filename: ce_styles.css
+*/
+
+/* Within hte window and body styles the html was given a new backround color. The body was given a backround color of white, a font family was placed, space was added on top/bottom of the margin of 20 pixel units, body was centered by applying auto to the left and right margins. The size was changed to 95% of its original state using width, the size was given a minimum and maximum size of 320 - 960 pixel units. All images were gievn a display of block  and resized by 100%. All hyperlinks had there underlines removed by applying none to their text decorations.  */
+
+/* Window and Body Styles */
+
+html {
+    background-color: rgb(101, 101, 101)
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-width: 320px;
+    max-width: 960px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Body Header Styles */
+body header {
+    background-color: rgb(191, 68, 70);
+    height: 40px;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+
+    color: rgb(255, 211, 211);
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+
+    font-size: 0.9em;
+}
+
+nav a {
+    color: rgb(51, 51, 51);
+}
+
+/* DIV Container Styles */
+
+
+
+/* Footer Styles */

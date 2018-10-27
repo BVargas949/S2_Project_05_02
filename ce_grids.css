@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Bryan Vargas
+   Date:   10/26/18
+   
+   Filename: ce_grids.css
+
+*/
+
+/* Within the class of row the elements within it were resized using width 100%, the elements also surrounded the floated items using clear (both left-right and using content "" ) along with display of table. */
+
+/* Grid Rows Styles */
+div.row {
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Here all divs with a class of column were floated to the left. The classes of column were resized using width using the number in there attribute value as the percentage.  */
+
+/* Grid Columns Styles */
+
+div[class^="column"] {
+    float: left;
+}
+
+div.column100 {
+    width: 100%;
+}
+
+div.column80 {
+    width: 80%
+}
+
+div.column75 {
+    width: 75%;
+}
+
+div.column67 {
+    width: 67%;
+}
+
+div.column50 {
+    width: 50%;
+}
+
+div.column40 {
+    width: 40%;
+}
+
+div.column33 {
+    width: 33%;
+}
+
+div.column25 {
+    width: 25%;
+}
+
+div.column20 {
+    width: 20%;
+}
+
+/*  within the spacing styles divs with the class of container, row, column, cell, and the anchors within cell were given a border box display using webkits.  */
+
+/* Grid Spacing Styles */
+
+div.container,
+div.row,
+div.column,
+div.cell,
+div[class^='column'],
+div.cell a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
