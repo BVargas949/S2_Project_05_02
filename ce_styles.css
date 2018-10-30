@@ -29,6 +29,7 @@ body {
     width: 95%;
     min-width: 320px;
     max-width: 960px;
+    position: relative;
 }
 
 img {
@@ -39,6 +40,8 @@ img {
 nav li a {
     text-decoration: none;
 }
+
+/* Within the body header styles the header was given a backround color of red and a new height of 40 pixel Units. The list items within the nav were displayed in block, moved to the left using float, given space of 20 pixel units in the right of the margin. Space was added as padding the the top and bottom of the nav list itmes (10 pixel units). Using the pseudo elements of active and hover, the hyperlinks were given a new text color that appears when the user hovers over them. The pseudo elements of link and visited allowed us to give the hyperlinks a permanent size of 0.9 em units.*/
 
 /* Body Header Styles */
 body header {
@@ -52,8 +55,8 @@ nav ul li {
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 nav ul li a:active,
@@ -72,8 +75,30 @@ nav a {
     color: rgb(51, 51, 51);
 }
 
+/* within the DIV styles the divs with a class value of "container" were given space using padding (on the right and bottom of the items by 8 pixel uints). The hyperlinks within divs of "cell" value were displayed in block, resized to fit its entire box using width (100%), the hyperlinks were also given more space with padding of 8 pixel units to the left and ontop.*/
+
 /* DIV Container Styles */
+div.container {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
 
+div.cell a {
+    display: block;
+    width: 100%;
+    padding-top: 8px;
+    padding-left: 8px;
+}
 
+/* Within the footer styles the postion was set to absolute to ensure it is placed in specific coordinates. The coordinates were set to 8 pixel uints to the bottom and right. The text colr was changed using rgb. The text was aligned to the right. The font-size was set to 2 vmin units, to ensure it will resize with different browser sizes. */
 
 /* Footer Styles */
+
+footer {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    color: rgb(143, 33, 36);
+    text-align: right;
+    font-size: 2vmin;
+}
